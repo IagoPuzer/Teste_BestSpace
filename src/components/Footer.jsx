@@ -5,7 +5,7 @@ import Logo from "../assets/img/Logo.png";
 
 export function Footer() {
   return (
-    <div className=" bg-slate-800">
+    <div className=" bg-slate-800 ">
       <div className="grid lg:flex py-20 gap-y-10 justify-center items-center gap-x-24 border-b-2 border-neutral-500">
         <div className="mb-4 md:mb-0 flex flex-col justify-center items-center">
           <img src={Logo} alt="Logotipo da Empresa" className="mb-2"></img>
@@ -30,13 +30,7 @@ export function Footer() {
                 <div className="bg-neutral-100 rounded-full w-10 h-10 flex justify-center items-center">
                   <FaLinkedinIn />
                 </div>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/company/best-spaces/"
-                  className="text-neutral-100"
-                >
-                  BestSpaces
-                </a>
+                <span className="text-neutral-100">BestSpaces</span>
               </a>
             </li>
             <li className="flex items-center gap-2">
