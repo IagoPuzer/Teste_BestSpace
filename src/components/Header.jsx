@@ -32,7 +32,7 @@ export function Header() {
     </div>
   );
   return (
-    <nav className="bg-cyan-800">
+    <nav className="bg-cyan-800 fixed top-0 shadow-xl z-50 w-full">
       <div className="h-10vh flex justify-between z-50 text-white lg-py-5 px-20 py-4">
         <div className="flex items-center flex-1">
           <span className="text-3xl font-bold">BestSpaces</span>
