@@ -8,13 +8,14 @@ export function App() {
   return (
     <div>
       <Header />
+
       <div id="Hero">
         <Hero />
       </div>
+
       <div id="Form">
         <Form />
       </div>
-      {/* <Btn Text="teste" /> */}
 
       <Footer />
     </div>

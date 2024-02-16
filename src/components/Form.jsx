@@ -28,7 +28,7 @@ export function Form() {
 
   return (
     <div className="mt-8 lg:grid lg:grid-cols-2 p-10">
-      <form className="flex-1 flex flex-col px-20">
+      <form className="flex-1 flex flex-col lg:px-20">
         <div className="flex flex-1 flex-col gap-3 p-5 bg-gray-100 rounded-md">
           <label htmlFor="note" className="text-sm font-medium text-slate-500">
             Adicione um texto:
@@ -65,45 +65,6 @@ export function Form() {
           className="w-full bg-lime-400 py-4 text-center text-sm text-lime-950 outline-none font-medium hover:bg-lime-500 rounded-md mt-3"
         >
           Enviar para o console
-        </button>
-      </form>
-      <form className="flex-1 flex flex-col px-20 mt-6 lg:mt-0">
-        <div className="flex flex-1 flex-col gap-3 p-5 bg-gray-100 rounded-md">
-          <label htmlFor="note" className="text-sm font-medium text-slate-500">
-            Adicione um texto:
-          </label>
-
-          <textarea
-            id="note"
-            autoFocus
-            className="text-sm leading-6 text-slate-400 resize-none flex-1 outline-none bg-white p-3 rounded-md"
-          />
-        </div>
-        <div className="container mx-auto mt-4">
-          <h1 className="text-2xl font-bold mb-4">Selects</h1>
-          <div className="grid grid-cols-2 gap-2">
-            <CustomSelect
-              options={options1}
-              onChange={setSelectedOption1}
-              value={selectedOption1}
-            />
-            <CustomSelect
-              options={options2}
-              onChange={setSelectedOption2}
-              value={selectedOption2}
-            />
-            <CustomSelect
-              options={options3}
-              onChange={setSelectedOption3}
-              value={selectedOption3}
-            />
-          </div>
-        </div>
-        <button
-          type="submit"
-          className="w-full bg-lime-400 py-4 text-center text-sm text-lime-950 outline-none font-medium hover:bg-lime-500 rounded-md mt-3"
-        >
-          Salvar nota
         </button>
       </form>
     </div>
