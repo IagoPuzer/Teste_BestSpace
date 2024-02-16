@@ -2,7 +2,7 @@ import Banner from "../assets/banner-novo.png";
 
 export function Hero() {
   return (
-    <div id="home" className="relative w-screen">
+    <div id="home" className="relative w-full">
       <div className="bg-cover bg-center h-[600px] 2xl:h-[800px] relative">
         <img src={Banner} alt="" className="w-full h-full object-cover" />
         <div className="absolute top-1/2 left-1/4 transform -translate-x-1/2 -translate-y-1/2 text-left text-neutral-1000 z-50">
