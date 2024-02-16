@@ -3,6 +3,9 @@ import { useState } from "react";
 
 export function Form() {
   const [selectedOption1, setSelectedOption1] = useState("");
+  const [selectedOption2, setSelectedOption2] = useState("");
+  const [selectedOption3, setSelectedOption3] = useState("");
+  const [textareaValue, setTextareaValue] = useState("");
 
   const options1 = [
     { value: "casa1", label: "Casa 1" },
@@ -10,15 +13,11 @@ export function Form() {
     { value: "casa3", label: "Casa 3" },
   ];
 
-  const [selectedOption2, setSelectedOption2] = useState("");
-
   const options2 = [
     { value: "casa1", label: "Casa 1" },
     { value: "casa2", label: "Casa 2" },
     { value: "casa3", label: "Casa 3" },
   ];
-
-  const [selectedOption3, setSelectedOption3] = useState("");
 
   const options3 = [
     { value: "casa1", label: "Casa 1" },
@@ -26,9 +25,19 @@ export function Form() {
     { value: "casa3", label: "Casa 3" },
   ];
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Log dos valores selecionados no console
+    console.log("Selected Option 1:", selectedOption1);
+    console.log("Selected Option 2:", selectedOption2);
+    console.log("Selected Option 3:", selectedOption3);
+    console.log("Textarea Value:", textareaValue);
+  };
+
   return (
     <div className="mt-8 lg:grid lg:grid-cols-2 p-10">
-      <form className="flex-1 flex flex-col lg:px-20">
+      <form onSubmit={handleSubmit} className="flex-1 flex flex-col xl:px-20">
         <div className="flex flex-1 flex-col gap-3 p-5 bg-gray-100 rounded-md">
           <label htmlFor="note" className="text-sm font-medium text-slate-500">
             Adicione um texto:
@@ -37,6 +46,8 @@ export function Form() {
           <textarea
             id="note"
             autoFocus
+            value={textareaValue}
+            onChange={(e) => setTextareaValue(e.target.value)}
             className="text-sm leading-6 text-slate-400 resize-none flex-1 outline-none bg-white p-3 rounded-md"
           />
         </div>
