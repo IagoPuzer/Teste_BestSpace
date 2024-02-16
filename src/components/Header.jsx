@@ -32,26 +32,26 @@ export function Header() {
     </div>
   );
   return (
-    <nav className="bg-slate-900">
+    <nav className="bg-cyan-800">
       <div className="h-10vh flex justify-between z-50 text-white lg-py-5 px-20 py-4">
         <div className="flex items-center flex-1">
-          <span className="text-3xl font-bold">LOGO</span>
+          <span className="text-3xl font-bold">BestSpaces</span>
         </div>
         <div className="lg:flex md:flex lg:flex-1 items-center justify-end font-normal hidden">
           <div className="flex-10">
             <ul className="flex gap-8 mr-16 text-lg">
               <Link spy={true} smooth={true} to="Hero">
-                <li className="hover:text-orange-300 transition border-b-2 border-slate-900 hover:border-orange-300 cursor-pointer">
+                <li className="hover:text-orange-300 transition border-b-2 border-cyan-800 hover:border-orange-300 cursor-pointer">
                   Hero
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Form">
-                <li className="hover:text-orange-300 transition border-b-2 border-slate-900 hover:border-orange-300 cursor-pointer">
+                <li className="hover:text-orange-300 transition border-b-2 border-cyan-800 hover:border-orange-300 cursor-pointer">
                   Form
                 </li>
               </Link>
               <Link spy={true} smooth={true} to="Footer">
-                <li className="hover:text-orange-300 transition border-b-2 border-slate-900 hover:border-orange-300 cursor-pointer">
+                <li className="hover:text-orange-300 transition border-b-2 border-cyan-800 hover:border-orange-300 cursor-pointer">
                   Footer
                 </li>
               </Link>
