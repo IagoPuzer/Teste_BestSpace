@@ -23,11 +23,6 @@ export function Header() {
             Form
           </li>
         </Link>
-        <Link spy={true} smooth={true} to="Footer">
-          <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">
-            Footer
-          </li>
-        </Link>
       </ul>
     </div>
   );
@@ -48,11 +43,6 @@ export function Header() {
               <Link spy={true} smooth={true} to="Form">
                 <li className="hover:text-orange-300 transition border-b-2 border-cyan-800 hover:border-orange-300 cursor-pointer">
                   Form
-                </li>
-              </Link>
-              <Link spy={true} smooth={true} to="Footer">
-                <li className="hover:text-orange-300 transition border-b-2 border-cyan-800 hover:border-orange-300 cursor-pointer">
-                  Footer
                 </li>
               </Link>
             </ul>
