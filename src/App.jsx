@@ -1,10 +1,13 @@
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Hero } from "./components/Hero";
+// import { Btn } from "./components/Btn";
 
 export function App() {
   return (
     <div>
       <Header />
+      <Hero />
       <div className="mx-auto max-w-6xl my-12 space-y-6">
         <form className="w-full">
           <input
@@ -18,7 +21,11 @@ export function App() {
 
         <div className="grid grid-cols-3 auto-rows-[250px] gap-6"></div>
       </div>
-      <Footer />
+      <img src="./assets/banner-novo.png" alt="" className="z-20" />
+      {/* <Btn Text="teste" /> */}
+      <div id="Footer">
+        <Footer />
+      </div>
     </div>
   );
 }
